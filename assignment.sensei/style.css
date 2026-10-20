@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 400px;
+    margin: 20px 100px;
+    padding: 5px 20px;
+    color: black;
+    background-color: aliceblue;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    padding: 8px;
+}
+.card {
+    text-decoration: aquamarine;
+    padding: 5px;
+    align-items: center;
+    margin: 10px;
+}
+p {
+    color: blue;
+    align-items: flex-start;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
