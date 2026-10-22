@@ -1,36 +1,81 @@
-* {
-    margin: 0;
-    padding: 0;
+*   {
     box-sizing: border-box;
 }
 
-body {
-    max-width: 400px;
-    margin: 20px 100px;
-    padding: 5px 20px;
-    color: black;
+:root {
+    color-scheme: dark;
+    margin: auto;
     background-color: aliceblue;
 }
 
-.main {
+body {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 20px;
-    padding: 8px;
+    margin: auto;
+    padding: 50px 15px;
+    color: black;
+    width: fit-content;
 }
-.card {
-    text-decoration: aquamarine;
-    padding: 5px;
-    align-items: center;
-    margin: 10px;
+
+h1,
+#expenseForm
+.card
+.total {
+    text-align: center;
+    width: min(100%, 540px);
 }
-p {
-    color: blue;
-    align-items: flex-start;
-}
+
 h1 {
     color: blue;
     text-align: center;
+}
+
+
+#expenseForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 25px;
+    padding: 10px;
+}
+.card {
+    text-decoration: aquamarine;
+    padding: 8px;
+    align-items: center;
+    margin: 10px;
+}
+.total {
+    color: crimson;
+    align-items: flex-start;
+}
+@media (max-width: 480px){
+    body {
+        min-height: 100vh;
+        padding: 20px 8px;
+    }
+    h1 {
+        padding: 10px 5px;
+    }
+    #expenseForm {
+        padding: 30px;
+        width: 100%;
+    }
+    .card {
+        padding: 10px;
+    }
+    .total {
+        padding: 10px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }
